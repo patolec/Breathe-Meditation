@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<!-- saved from url=(0086)https://8000-30b1aeda2fd4487fb826dd4e26695303.e2b.ap-beijing.sandbox.cloudstudio.club/ -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>保护前额叶 - 大脑健康指南</title>
+    <link rel="stylesheet" href="./保护前额叶 - 大脑健康指南_files/style.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>保护前额叶</h1>
+            <p class="subtitle">守护大脑的"指挥官"，提升生活质量</p>
+            <p class="hero-description">前额叶（Prefrontal Cortex）是大脑额叶的前部区域，被称为大脑的"指挥官"。它负责高级认知功能，包括决策制定、计划、冲动控制、情绪调节和社会行为等。前额叶的健康状况直接影响我们的工作效率、情绪状态和生活质量。</p>
+        </div>
+        <div class="brain-icon">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="50" cy="50" rx="45" ry="40" fill="#8B5CF6" opacity="0.3"></ellipse>
+                <path d="M30 35 Q25 50 30 65 Q40 75 50 70 Q60 75 70 65 Q75 50 70 35 Q60 25 50 30 Q40 25 30 35" fill="#8B5CF6" stroke="#6D28D9" stroke-width="2"></path>
+                <path d="M45 30 Q50 45 45 60" stroke="#A78BFA" stroke-width="2" fill="none"></path>
+                <path d="M55 30 Q50 45 55 60" stroke="#A78BFA" stroke-width="2" fill="none"></path>
+            </svg>
+        </div>
+    </header>
+
+    <main>
+        <section class="tips-section">
+            <div class="container">
+                <h2>保护前额叶的关键策略</h2>
+                <div class="tips-grid">
+                    <div class="tip-item">
+                        <span class="tip-number">01</span>
+                        <h3>充足睡眠</h3>
+                        <p>保证每晚7-9小时高质量睡眠，让大脑得到充分休息和修复</p>
+                    </div>
+                    <div class="tip-item">
+                        <span class="tip-number">02</span>
+                        <h3>规律运动</h3>
+                        <p>每周进行150分钟中等强度有氧运动，促进脑部血液循环</p>
+                    </div>
+                    <div class="tip-item">
+                        <span class="tip-number">03</span>
+                        <h3>健康饮食</h3>
+                        <p>摄入富含Omega-3脂肪酸、抗氧化剂的食物，滋养大脑</p>
+                    </div>
+                    <div class="tip-item">
+                        <span class="tip-number">04</span>
+                        <h3>压力管理</h3>
+                        <p>学习冥想、深呼吸等放松技巧，降低慢性压力影响</p>
+                    </div>
+                    <div class="tip-item">
+                        <span class="tip-number">05</span>
+                        <h3>认知训练</h3>
+                        <p>通过阅读、解谜、学习新技能保持大脑活力</p>
+                    </div>
+                    <div class="tip-item">
+                        <span class="tip-number">06</span>
+                        <h3>社交互动</h3>
+                        <p>保持积极的社交关系，刺激大脑情感和认知区域</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 冥想放松区域 -->
+        <section class="meditation-section" id="meditation-section">
+            <div class="meditation-container">
+                <div class="meditation-header">
+                    <h2>冥想放松</h2>
+                    <p class="meditation-intro">深呼吸冥想可以有效降低压力水平，促进前额叶功能恢复</p>
+                </div>
+                
+                <div class="meditation-stats">
+                    <div class="stat-item">
+                        <span>🔥</span>
+                        <span>连续</span>
+                        <span class="stat-num" id="streakDays">0</span>
+                        <span>天</span>
+                    </div>
+                    <div class="stat-item">
+                        <span>⏱</span>
+                        <span>累计</span>
+                        <span class="stat-num" id="totalMinutes">3</span>
+                        <span>分钟</span>
+                    </div>
+                </div>
+
+                <div class="session-selector">
+                    <div class="session-card active" data-session="stress">
+                        <div class="session-icon">🌙</div>
+                        <div class="session-name">压力缓解</div>
+                        <div class="session-desc">4-7-8 放松</div>
+                    </div>
+                    <div class="session-card" data-session="sleep">
+                        <div class="session-icon">💤</div>
+                        <div class="session-name">睡前舒缓</div>
+                        <div class="session-desc">4-6 助眠</div>
+                    </div>
+                    <div class="session-card" data-session="energy">
+                        <div class="session-icon">☀️</div>
+                        <div class="session-name">唤醒能量</div>
+                        <div class="session-desc">快速唤醒</div>
+                    </div>
+                    <div class="session-card" data-session="focus">
+                        <div class="session-icon">🎯</div>
+                        <div class="session-name">专注提升</div>
+                        <div class="session-desc">等比呼吸</div>
+                    </div>
+                </div>
+
+                <div class="custom-breath-panel" id="customPanel">
+                    <div class="custom-title">自定义呼吸时长（秒）</div>
+                    <div class="custom-sliders">
+                        <div class="slider-row">
+                            <span class="slider-label">吸气</span>
+                            <input type="range" class="slider-input" id="inhaleSlider" min="1" max="10" value="4">
+                            <span class="slider-value" id="inhaleVal">4</span>
+                        </div>
+                        <div class="slider-row">
+                            <span class="slider-label">屏息</span>
+                            <input type="range" class="slider-input" id="holdSlider" min="0" max="15" value="7">
+                            <span class="slider-value" id="holdVal">7</span>
+                        </div>
+                        <div class="slider-row">
+                            <span class="slider-label">呼气</span>
+                            <input type="range" class="slider-input" id="exhaleSlider" min="1" max="15" value="8">
+                            <span class="slider-value" id="exhaleVal">8</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="breath-area">
+                    <div class="breath-circle-outer">
+                        <div class="glow-ring"></div>
+                        <div class="glow-ring"></div>
+                        <div class="glow-ring"></div>
+                        <div class="breath-circle" id="breathCircle">
+                            <div class="breath-content">
+                                <div class="breath-phase" id="breathPhase">准备开始</div>
+                                <div class="breath-count" id="breathCount"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="breath-mode-info" id="breathModeInfo">4-7-8 呼吸法</div>
+                </div>
+
+                <div class="duration-row">
+                    <button class="dur-btn" data-duration="180">3分</button>
+                    <button class="dur-btn active" data-duration="300">5分</button>
+                    <button class="dur-btn" data-duration="600">10分</button>
+                    <button class="dur-btn" data-duration="900">15分</button>
+                </div>
+
+                <div class="timer-area">
+                    <div class="timer-time" id="timerDisplay">5:00</div>
+                </div>
+
+                <div class="breath-controls">
+                    <button class="ctrl-btn secondary" id="resetBtn">↺</button>
+                    <button class="ctrl-btn play" id="playBtn">▶</button>
+                    <button class="ctrl-btn secondary" id="fullscreenBtn">⛶</button>
+                </div>
+
+                <div class="breath-tools">
+                    <button class="tool-btn active" id="guideBtn">
+                        <span class="tool-icon">💡</span>
+                        <span>引导音</span>
+                    </button>
+                    <button class="tool-btn" id="vibrateBtn">
+                        <span class="tool-icon">📳</span>
+                        <span>震动</span>
+                    </button>
+                    <button class="tool-btn" id="historyBtn">
+                        <span class="tool-icon">📊</span>
+                        <span>统计</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="action-section">
+            <div class="container">
+                <h2>从今天开始行动</h2>
+                <p class="action-text">保护前额叶不是一朝一夕的事，而是需要持续的生活方式调整。每一个小习惯的改变，都是对大脑健康的投资。从今天开始，选择一项你可以坚持的行动，让大脑的"指挥官"保持最佳状态。</p>
+                <div class="action-buttons">
+                    <button class="btn btn-primary" id="start-btn">开始我的大脑健康之旅</button>
+                    <button class="btn btn-secondary" id="remind-btn">设置每日提醒</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 每日打卡区域 -->
+        <section class="daily-habits">
+            <div class="container">
+                <h2>每日健康打卡</h2>
+                <p class="habits-subtitle">每次完成一项活动就记录下来，追踪你的健康习惯</p>
+                
+                <div class="habits-grid">
+                    <div class="habit-card" data-habit="water">
+                        <div class="habit-icon">💧</div>
+                        <h3>喝水</h3>
+                        <p class="habit-desc">每次喝一杯水</p>
+                        <div class="habit-counter">
+                            <button class="counter-btn minus" data-action="minus">−</button>
+                            <span class="counter-value" id="count-water">0</span>
+                            <button class="counter-btn plus" data-action="plus">+</button>
+                        </div>
+                        <p class="habit-goal">目标：8杯/天</p>
+                    </div>
+
+                    <div class="habit-card" data-habit="exercise">
+                        <div class="habit-icon">🏃</div>
+                        <h3>运动</h3>
+                        <p class="habit-desc">每次运动10分钟</p>
+                        <div class="habit-counter">
+                            <button class="counter-btn minus" data-action="minus">−</button>
+                            <span class="counter-value" id="count-exercise">1</span>
+                            <button class="counter-btn plus" data-action="plus">+</button>
+                        </div>
+                        <p class="habit-goal">目标：3次/天</p>
+                    </div>
+
+                    <div class="habit-card" data-habit="meditation">
+                        <div class="habit-icon">🧘</div>
+                        <h3>冥想</h3>
+                        <p class="habit-desc">每次放松练习</p>
+                        <div class="habit-counter">
+                            <button class="counter-btn minus" data-action="minus">−</button>
+                            <span class="counter-value" id="count-meditation">0</span>
+                            <button class="counter-btn plus" data-action="plus">+</button>
+                        </div>
+                        <p class="habit-goal">目标：2次/天</p>
+                    </div>
+
+                    <div class="habit-card" data-habit="reading">
+                        <div class="habit-icon">📚</div>
+                        <h3>阅读</h3>
+                        <p class="habit-desc">每次阅读15分钟</p>
+                        <div class="habit-counter">
+                            <button class="counter-btn minus" data-action="minus">−</button>
+                            <span class="counter-value" id="count-reading">0</span>
+                            <button class="counter-btn plus" data-action="plus">+</button>
+                        </div>
+                        <p class="habit-goal">目标：2次/天</p>
+                    </div>
+
+                    <div class="habit-card" data-habit="social">
+                        <div class="habit-icon">💬</div>
+                        <h3>社交</h3>
+                        <p class="habit-desc">每次积极社交</p>
+                        <div class="habit-counter">
+                            <button class="counter-btn minus" data-action="minus">−</button>
+                            <span class="counter-value" id="count-social">0</span>
+                            <button class="counter-btn plus" data-action="plus">+</button>
+                        </div>
+                        <p class="habit-goal">目标：1次/天</p>
+                    </div>
+
+                    <div class="habit-card" data-habit="sleep">
+                        <div class="habit-icon">😴</div>
+                        <h3>睡眠</h3>
+                        <p class="habit-desc">记录睡眠质量</p>
+                        <div class="habit-counter">
+                            <button class="counter-btn minus" data-action="minus">−</button>
+                            <span class="counter-value" id="count-sleep">0</span>
+                            <button class="counter-btn plus" data-action="plus">+</button>
+                        </div>
+                        <p class="habit-goal">目标：7-9小时</p>
+                    </div>
+                </div>
+
+                <div class="daily-summary">
+                    <div class="summary-card">
+                        <div class="summary-header">
+                            <span class="summary-date" id="todayDate">3月27日星期五</span>
+                            <span class="summary-label">今日打卡统计</span>
+                        </div>
+                        <div class="summary-stats">
+                            <div class="summary-item">
+                                <span class="summary-icon">✅</span>
+                                <span class="summary-text">完成 <strong id="totalCheckins">1</strong> 次打卡</span>
+                            </div>
+                            <div class="summary-item">
+                                <span class="summary-icon">🔥</span>
+                                <span class="summary-text">连续 <strong id="dailyStreak">1</strong> 天打卡</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>关爱大脑健康，从保护前额叶开始</p>
+            <p class="disclaimer">本页面仅供参考，如有健康问题请咨询专业医生</p>
+        </div>
+    </footer>
+
+    <!-- 冥想完成弹窗 -->
+    <div class="modal-overlay" id="completeModal">
+        <div class="modal-box">
+            <div class="modal-icon">✨</div>
+            <h2 class="modal-title">冥想完成</h2>
+            <p class="modal-quote" id="quoteText"></p>
+            <p class="modal-stats" id="statsText"></p>
+            <button class="modal-btn" id="doneBtn">完成</button>
+        </div>
+    </div>
+
+    <!-- 历史统计弹窗 -->
+    <div class="modal-overlay" id="historyModal">
+        <div class="history-box">
+            <h2 class="history-title">冥想统计</h2>
+            <div class="stat-grid-modal">
+                <div class="stat-card-modal">
+                    <div class="stat-num-modal" id="statSessions">1</div>
+                    <div class="stat-label-modal">总次数</div>
+                </div>
+                <div class="stat-card-modal">
+                    <div class="stat-num-modal" id="statMinutes">3</div>
+                    <div class="stat-label-modal">总分钟</div>
+                </div>
+                <div class="stat-card-modal">
+                    <div class="stat-num-modal" id="statCycles">9</div>
+                    <div class="stat-label-modal">呼吸循环</div>
+                </div>
+                <div class="stat-card-modal">
+                    <div class="stat-num-modal" id="statStreak">0</div>
+                    <div class="stat-label-modal">连续天数</div>
+                </div>
+            </div>
+            <button class="history-close" id="closeHistoryBtn">关闭</button>
+        </div>
+    </div>
+
+    <script src="./保护前额叶 - 大脑健康指南_files/script.js"></script>
+
+
+</body></html>
